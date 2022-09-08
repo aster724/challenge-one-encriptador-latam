@@ -2,22 +2,31 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    background-image: url(../logo/maxtrixx.gif);
 }
-header{
-    
+
+header {
+   
+    box-shadow: 2px 4px 10px gray;
     display: flex;
-    height: 180px;
-    width: 100%;
+    align-items: center;
     justify-content: space-between;
 } 
-nav{
-    display: flex;
-    height: 180px;
-    width: 100%;
-    justify-content: space-between;
-}
-div{
-    display: block;
 
+
+nav li{
+    text-transform: uppercase;
+    color: rgb(196, 151, 5);
+    font-weight:  bold;
+    font-size: 22px;
+    text-decoration: none;
+    display: inline;
+    margin: 0 0 0 15px;
 }
 
+
+img{
+    display: inline;
+    border-radius: 25px;
+    box-shadow: 2px 4px 10px rgb(10, 105, 22);
+}

@@ -2,7 +2,7 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    background-image: url(../logo/maxtrixx.gif);
+    /*background-image: url(../logo/maxtrixx.gif);*/
 }
 
 header {
@@ -11,6 +11,7 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    
 } 
 
 
@@ -26,7 +27,43 @@ nav li{
 
 
 img{
+    
     display: inline;
     border-radius: 25px;
     box-shadow: 2px 4px 10px rgb(10, 105, 22);
+    max-width: 80%;
+    margin-left: 10px;
 }
+
+main{
+    width: auto;
+    display: flex;
+    
+}
+
+main section{
+    display: inline-block;
+    height: auto;
+    border: 2px solid green;
+    border-radius: 15px;
+    margin: 30px;
+    text-align: center;
+}
+
+.encriptar{
+    display: flex;
+    align-self: center;
+}
+
+footer{
+    text-align: center;
+    background-image: url(../logo/matrix.gif);
+    padding: 50px;
+    color: goldenrod;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    
+}
+
+

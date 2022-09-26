@@ -9,39 +9,39 @@
     <title>Encriptador</title>
 </head>
 <body>
-    <header>
+    <div class="contenedor">
+        <header>
             <figure>
-                    <img src="./logo/matrix.gif" alt="logo">
+                    <img src="./logo/alura-challenges.svg" alt="logo">
+                    <img src="./logo/oracle-alura-logo.svg" alt="fondo">
             </figure>
             <nav >    
                     <ul>
-                        <img src="" alt="fondo">
+                        
                         <li>Decodificador de Secretos</li>
-                        <li></li>
-                        <li></li>
                     </ul>
             </nav>        
         <img src="./logo/alura.jpg" alt="alura">
             
-    </header>
-    <main>
-        <section>
-                <input type="text" placeholder="Ingrese el texto aqui!"/>
-                    <button>Campo para el texto que va a ser encriptado/desencriptado</button>
-        </section>
-        <section class="encriptar">
-            <button type="submit">encriptar</button>
-        </section>
-        <section class="desenciptar"><button type="submit">desencriptar</button>
-        </section>
-        <section>
-            <input/>
-            <button>Campo para el texto que va a ser encriptado/desencriptado</button>
-        </section>
-            
-    </main>
-    <footer>
+        </header>
+        <main>
+            <section class="left">
+                <input id="inputText" class="text-input" type="text" placeholder="Ingrese aqui su texto">
+            </section>
+            <section class="right">
+                <img id="muneco" src="./logo/giphy.gif" alt="img">
+                <textarea name="name" id="texto2" cols="50" rows="30">Ingrese el texto que va a encriptar o desencriptar</textarea>
+                <button id="copiar" type="button" name="button" onclick="copiar()">Copiar</button>
+            </section>
+            <section class="left-button">
+                <p class="msg-minusculas">⚠ Solo letras minúsculas y sin acentos</p>
+                <button type="button" id="btn-encriptar" onclick="encriptar()">Encriptar</button>
+                <button type="submit" id="btn-desencriptar" onclick="desencriptar()">Desencriptar</button>
+            </section>
+        </main>
+        <footer>
         <ul><li>by Maxxtertech Cali</li></ul>
-    </footer>
+        </footer>
+    </div>
 </body>
 </html>

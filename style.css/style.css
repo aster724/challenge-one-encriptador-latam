@@ -3,6 +3,15 @@
     margin: 0;
     padding: 0;
     /*background-image: url(../logo/maxtrixx.gif);*/
+   
+}
+
+.contenedor {
+    padding: 5px;
+    margin: auto;
+    width: 980px;
+    height: 755px;
+    
 }
 
 header {
@@ -13,11 +22,13 @@ header {
     justify-content: space-between;
     
 } 
-
+figure{
+    display: grid;
+}
 
 nav li{
     text-transform: uppercase;
-    color: rgb(196, 151, 5);
+    
     font-weight:  bold;
     font-size: 22px;
     text-decoration: none;
@@ -29,29 +40,136 @@ nav li{
 img{
     
     display: inline;
-    border-radius: 25px;
-    box-shadow: 2px 4px 10px rgb(10, 105, 22);
+    /*border-radius: 25px;
+    box-shadow: 2px 4px 10px rgb(10, 105, 22);*/
     max-width: 80%;
     margin-left: 10px;
 }
 
 main{
     width: auto;
-    display: flex;
-    
+   
+}
+.left {
+    float: left;
+    width: 70%;
+    height: 50%;
+    border-radius
+}  
+.text-input {
+    float: left;
+    margin-left: 10%;
+    margin-top: 10%;
+    width: 560px;
+    height: 240px;
+    color: #0A3871;
+    font-size: 20px;
+    font-family: 'Courier New', Courier, monospace;
+    border: none;
+    outline: none;
+    background: #F3F5FC;
+}
+#muneco {
+    margin-left: 10%;
+    margin-top: 10%;
+    width: 90%;
+    height: auto;
+}
+.right {
+    float: right;
+    width: 30%;
+    border-radius: 0 20px 0 20px;
+    height: 63%;
 }
 
-main section{
-    display: inline-block;
-    height: auto;
-    border: 2px solid green;
-    border-radius: 15px;
-    margin: 30px;
+#texto2 {
+    float: left;
+    margin: 27px 24px;
+    color: #065a11;
+    width: 251px;
+    height: 200px;
+    border: none;
+    outline: none;
+    font-size: 15px
+}
+#copiar {
+    margin-left: 33%;
+    margin-top: 90%;
+    padding: 24px;
+    width: 40%;
+    height: 10%;
+    background: #ffffff;
+    border: 1px solid #044713;
+    border-radius: 0 20px 0 20px;
+    display: none;
+    transition: 1s all;
+    cursor: pointer;
+    font-family: Courier;
+    font-size: 18px;
     text-align: center;
 }
 
+.left-button {
+    float: left;
+    width: 70%;
+    height: auto;
+    border-radius: 0 20px 0 20px;
+}
+
+.msg-minusculas {
+    margin-left: auto;
+    width: 80%;
+    height: 18px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 100%;
+    color: #495057;
+    opacity: 0.8;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
+#btn-encriptar {
+    padding: 24px;
+    width: 30%;
+    height: 60%;
+    border-radius: 0 20px 0 20px;
+    margin-left: 10%;
+    background: #044713;;
+    font-size: 16px;
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+    color: #D8DFE8;
+    font-weight: bold;
+    transition: 1s all;
+    cursor: pointer;
+}
+#btn-desencriptar {
+    padding: 24px;
+    width: 30%;
+    height: 60%;
+    border-radius: 0 20px 0 20px;
+    margin-left: 10%;
+    background: #D8DFE8;
+    font-size: 16px;
+    font-family: 'Courier New', Courier, monospace;
+    color: #044713;
+    font-weight: bold;
+    transition: 1s all;
+    cursor: pointer;
+}
+
+/*main section{
+    display: inline-block;
+    height: auto;
+    /*border: 2px solid green;
+    border-radius: 15px;*
+    margin: 30px;
+    text-align: center;*/
+
 .encriptar{
-    display: flex;
+    display: block;
     align-self: center;
 }
 
@@ -61,8 +179,8 @@ footer{
     padding: 50px;
     color: goldenrod;
     position: absolute;
-    bottom: 0;
-    width: 100%;
+    bottom: 05px;
+    width: 972px;
     
 }
 

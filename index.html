@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css/reset.css">
     <link rel="stylesheet" href="style.css/style.css">
-    <link rel="stylesheet" href="script.js">
+    
     <title>Encriptador</title>
 </head>
 <body>
@@ -26,23 +26,25 @@
             
         </header>
         <main>
-            <section class="left">
-                <input id="inputText" class="text-input" type="text" placeholder="Ingrese aqui su texto">
+            <section class="encriptar_container">
+                <textarea  class="text-input" cols="50" rows="20" placeholder="Ingrese aqui su texto"></textarea>  
+                <div><p class="encriptar__text">⚠ Solo letras minúsculas y sin acentos</p></div>
+                <div>
+                    <button class="encriptar__bottom"  onclick="btnEncriptar()">Encriptar</button>
+                    <button class="desencriptar__bottom"  onclick="desencriptar()">Desencriptar</button>
+                </div>    
             </section>
-            <section class="right">
+            <section class="desencriptar_container">
                 <img id="muneco" src="./logo/giphy.gif" alt="img">
-                <textarea name="name" id="texto2" cols="50" rows="30">Ingrese el texto que va a encriptar o desencriptar</textarea>
-                <button id="copiar" type="button" name="button" onclick="copiar()">Copiar</button>
+                <textarea class="mensaje" cols="10" rows="10"placeholder="Ingrese el texto que va a encriptar o desencriptar"></textarea>
+                <button class="desencriptar_copiar" name="button" onclick="copiar()">Copiar</button>
             </section>
-            <section class="left-button">
-                <p class="msg-minusculas">⚠ Solo letras minúsculas y sin acentos</p>
-                <button type="button" id="btn-encriptar" onclick="encriptar()">Encriptar</button>
-                <button type="submit" id="btn-desencriptar" onclick="desencriptar()">Desencriptar</button>
-            </section>
+            
         </main>
         <footer>
         <ul><li>by Maxxtertech Cali</li></ul>
         </footer>
     </div>
+    <script src="script.js"></script>
 </body>
 </html>

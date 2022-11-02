@@ -1,11 +1,11 @@
-const inputTexto = document.querySelector(".text-input")
-const mensaje = document.querySelector(".mensaje")
+const inputTexto = document.querySelector(".text-input");
+const mensaje = document.querySelector(".mensaje");
 
 
 function btnEncriptar() {
     const textoEncriptado = encriptar(inputTexto.value);
     mensaje.value = textoEncriptado;
-    inputTexto.value = " "
+    inputTexto.value = " ";
       
 }
 
@@ -22,4 +22,25 @@ function encriptar(stringEncriptada) {
     }
     return stringEncriptada;
 
+}
+
+function btnDesencriptar() {
+    const textoEncriptado = desencriptar(inputTexto.value);
+    mensaje.value = textoEncriptado;
+    inputTexto.value = " ";
+      
+}
+
+
+function desencriptar(stringDesencriptada){
+    let matrizCodigo = [ ["e", "enter"], ["i", "imes"], ["a", "ai"], ["o", "ober"], ["u", "ufat"]];
+    stringDesencriptada = stringDesencriptada.toLowerCase();
+
+    for( let i=0; i < matrizCodigo.length; i++){
+            if(stringDesencriptada.includes(matrizCodigo [i][1])){
+                stringDesencriptada = stringDesencriptada.replaceAll(matrizCodigo[i][1], matrizCodigo[i][0])
+            }
+
+    }
+    return stringDesencriptada;
 }
